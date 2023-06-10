@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-06-08T15:21:23.505637200Z</date>
+  <millis>1686237683505</millis>
+  <nanos>637200</nanos>
+  <sequence>0</sequence>
+  <logger>org.example.lectureapi.sem1.Main</logger>
+  <level>WARNING</level>
+  <class>org.example.lectureapi.lecture2.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Тестовое логирование 1</message>
+</record>
+<record>
+  <date>2023-06-08T15:21:23.803572800Z</date>
+  <millis>1686237683803</millis>
+  <nanos>572800</nanos>
+  <sequence>1</sequence>
+  <logger>org.example.lectureapi.sem1.Main</logger>
+  <level>INFO</level>
+  <class>org.example.lectureapi.lecture2.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Тестовое логирование 2</message>
+</record>
+</log>

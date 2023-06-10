@@ -1,4 +1,4 @@
-package org.example.sem1;
+package org.example.lectureapi.sem1;
 import java.util.Random;
 import java.util.stream.IntStream;
 

@@ -1,4 +1,4 @@
-package org.example.lecture1;
+package org.example.lectureapi.lecture1;
 import java.io.FileWriter;
 import java.io.IOException;
 

@@ -1,0 +1,4 @@
+июн. 08, 2023 10:23:59 PM org.example.lectureapi.lecture2.Main main
+WARNING: Тестовое логирование 1
+июн. 08, 2023 10:23:59 PM org.example.lectureapi.lecture2.Main main
+INFO: Тестовое логирование 2
