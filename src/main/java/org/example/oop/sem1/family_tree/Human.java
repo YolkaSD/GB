@@ -60,9 +60,6 @@ public class Human {
         return
                 "Имя: '" + name + '\'' +
                 ", Пол: " + gender.name() +
-                ", Дата рождения: " + dateBirth + "\n" +
-                ", Отец: " + this.getFather() +
-                ", Мать: " + this.getMother()
-                ;
+                ", Дата рождения: " + dateBirth;
     }
 }
