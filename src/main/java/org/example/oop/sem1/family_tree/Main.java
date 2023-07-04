@@ -1,7 +1,8 @@
 package org.example.oop.sem1.family_tree;
 
+import org.example.oop.sem1.family_tree.IO.implementations.WritableImpl;
+
 import java.time.LocalDate;
-import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,7 +17,7 @@ public class Main {
         human110.addChild(new Human("Алексей Иванов", Gender.Male, LocalDate.of(2022, 9, 5)));
 
         Human human120 = human110.getChild(1);
-        System.out.println(human120);
+       // System.out.println(human120);
         Human human130 = human100.getChild(2);
 
 
@@ -27,5 +28,8 @@ public class Main {
         FamilyTree familyTree = new FamilyTree();
         familyTree.addPerson(human100);
 
+        WritableImpl fileHandler = new WritableImpl(familyTree);
+        fileHandler.writeToFile();
+        System.out.println(fileHandler.readFromFile());
     }
 }

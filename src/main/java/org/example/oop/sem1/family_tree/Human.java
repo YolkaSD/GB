@@ -1,9 +1,10 @@
 package org.example.oop.sem1.family_tree;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.*;
 
-public class Human {
+public class Human implements Serializable {
     private String name;
     private Gender gender;
     private LocalDate dateBirth;
@@ -33,6 +34,10 @@ public class Human {
 
     public Human getFather() {
         return father;
+    }
+
+    public List<Human> getChildren() {
+        return children;
     }
 
     public void setFather(Human father) {
