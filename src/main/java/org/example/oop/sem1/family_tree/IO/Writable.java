@@ -1,6 +1,6 @@
-package org.example.oop.sem1.family_tree.IO.interfaces;
+package org.example.oop.sem1.family_tree.IO;
 
-import org.example.oop.sem1.family_tree.Human;
+import org.example.oop.sem1.family_tree.human.Human;
 
 import java.io.Serializable;
 import java.util.List;

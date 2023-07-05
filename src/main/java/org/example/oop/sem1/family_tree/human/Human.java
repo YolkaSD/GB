@@ -1,4 +1,6 @@
-package org.example.oop.sem1.family_tree;
+package org.example.oop.sem1.family_tree.human;
+
+import org.example.oop.sem1.family_tree.FamilyTree;
 
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -19,13 +21,22 @@ public class Human implements Serializable {
         children = new ArrayList<>();
     }
 
-    public void addChild(Human child) {
+    public void addChild(Human child, FamilyTree familyTree) {
         children.add(child);
         if (this.getGenderInfo().equals("Female")) {
             child.setMother(this);
         } else {
             child.setFather(this);
         }
+        familyTree.addPerson(child);
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public LocalDate getDateBirth() {
+        return dateBirth;
     }
 
     public Human getChild(int index) {

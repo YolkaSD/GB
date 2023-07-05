@@ -1,8 +1,7 @@
-package org.example.oop.sem1.family_tree.IO.implementations;
+package org.example.oop.sem1.family_tree.IO;
 
 import org.example.oop.sem1.family_tree.FamilyTree;
-import org.example.oop.sem1.family_tree.Human;
-import org.example.oop.sem1.family_tree.IO.interfaces.Writable;
+import org.example.oop.sem1.family_tree.human.Human;
 
 import java.io.*;
 import java.util.ArrayList;
