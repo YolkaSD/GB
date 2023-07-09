@@ -1,15 +1,15 @@
 package org.example.oop.sem1.family_tree;
 
-import org.example.oop.sem1.family_tree.human.Human;
+import org.example.oop.sem1.family_tree.human.Individual;
 
 import java.util.Iterator;
 import java.util.List;
 
-public class ThreeIterator implements Iterator<Human> {
+public class TreeIterator<T extends Individual> implements Iterator<T> {
     private int index;
-    private final List<Human> humanList;
+    private final List<T> humanList;
 
-    public ThreeIterator(List<Human> humanList) {
+    public TreeIterator(List<T> humanList) {
         this.humanList = humanList;
     }
 
@@ -19,7 +19,7 @@ public class ThreeIterator implements Iterator<Human> {
     }
 
     @Override
-    public Human next() {
+    public T next() {
         return humanList.get(index++);
     }
 }

@@ -1,6 +1,8 @@
 package org.example.oop.sem3.study_group.student;
 
-public class Student implements Comparable<Student>{
+import org.example.oop.sem3.study_group.group.GroupItem;
+
+public class Student implements Comparable<Student>, GroupItem {
     private int id;
     private String name;
 
@@ -12,10 +14,12 @@ public class Student implements Comparable<Student>{
         this.age = age;
     }
 
+    @Override
     public String getName() {
         return name;
     }
 
+    @Override
     public int getAge() {
         return age;
     }

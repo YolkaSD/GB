@@ -5,10 +5,10 @@ import org.example.oop.sem3.study_group.student.Student;
 
 public class Service {
     private int idStudent;
-    private StudyGroup group;
+    private StudyGroup<Student> group;
 
     public Service() {
-        group = new StudyGroup();
+        group = new StudyGroup<>();
     }
 
     public void addStudent(String name, int age) {

@@ -1,13 +1,12 @@
 package org.example.oop.sem1.family_tree.human.sorted;
 
-import org.example.oop.sem1.family_tree.human.Human;
-
+import org.example.oop.sem1.family_tree.human.Individual;
 import java.time.LocalDate;
 import java.util.Comparator;
 
-public class SortedByAge implements Comparator<Human> {
+public class SortedByAge<T extends Individual> implements Comparator<T> {
     @Override
-    public int compare(Human o1, Human o2) {
+    public int compare(T o1, T o2) {
         LocalDate dateO1 = o1.getDateBirth();
         LocalDate dateO2 = o2.getDateBirth();
         int result =  dateO1.getYear() - dateO2.getYear();
@@ -21,7 +20,7 @@ public class SortedByAge implements Comparator<Human> {
     }
 
     @Override
-    public Comparator<Human> reversed() {
+    public Comparator<T> reversed() {
         return Comparator.super.reversed();
     }
 }

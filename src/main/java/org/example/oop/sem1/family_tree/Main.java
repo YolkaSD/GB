@@ -7,7 +7,7 @@ import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
-        FamilyTree familyTree = new FamilyTree();
+        FamilyTree<Human> familyTree = new FamilyTree<>();
 
         Human human100 = new Human("Анна Иванова", Gender.Female, LocalDate.of(1970, 1, 1)); //Мать
         human100.addChild(new Human("Иван Иванов", Gender.Male, LocalDate.of(1998, 3, 5)), familyTree); // ребенок 1

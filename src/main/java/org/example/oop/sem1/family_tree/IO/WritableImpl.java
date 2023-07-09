@@ -2,16 +2,17 @@ package org.example.oop.sem1.family_tree.IO;
 
 import org.example.oop.sem1.family_tree.FamilyTree;
 import org.example.oop.sem1.family_tree.human.Human;
+import org.example.oop.sem1.family_tree.human.Individual;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WritableImpl implements Writable {
+public class WritableImpl<T extends Individual> implements Writable {
 
-    private FamilyTree familyTree;
+    private FamilyTree<T> familyTree;
 
-    public WritableImpl(FamilyTree familyTree) {
+    public WritableImpl(FamilyTree<T> familyTree) {
         this.familyTree = familyTree;
     }
 
@@ -19,8 +20,8 @@ public class WritableImpl implements Writable {
     public void writeToFile() {
         File file = new File("src/main/resources/familyTree.out");
         try (ObjectOutputStream outputStream = new ObjectOutputStream( new FileOutputStream(file))) {
-            List<Human> humans = familyTree.getAllHuman();
-            for (Human human : humans) {
+            List<T> humans = familyTree.getAllHuman();
+            for (T human : humans) {
                 outputStream.writeObject(human);
             }
         } catch (IOException e) {
@@ -29,13 +30,13 @@ public class WritableImpl implements Writable {
     }
 
     @Override
-    public List<Human> readFromFile() {
+    public List<T> readFromFile() {
         File file = new File("src/main/resources/familyTree.out");
-        List<Human> humans = new ArrayList<>();
+        List<T> humans = new ArrayList<>();
         try (ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream(file))){
             while (true) {
                 try {
-                    humans.add((Human) inputStream.readObject());
+                    humans.add((T) inputStream.readObject());
                 } catch (EOFException e) {
                     break;
                 }

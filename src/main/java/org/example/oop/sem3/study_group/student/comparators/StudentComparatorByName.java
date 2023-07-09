@@ -1,12 +1,13 @@
 package org.example.oop.sem3.study_group.student.comparators;
 
+import org.example.oop.sem3.study_group.group.GroupItem;
 import org.example.oop.sem3.study_group.student.Student;
 
 import java.util.Comparator;
 
-public class StudentComparatorByName implements Comparator<Student> {
+public class StudentComparatorByName<E extends GroupItem> implements Comparator<E> {
     @Override
-    public int compare(Student o1, Student o2) {
+    public int compare(E o1, E o2) {
         return o1.getName().compareTo(o2.getName());
     }
 }

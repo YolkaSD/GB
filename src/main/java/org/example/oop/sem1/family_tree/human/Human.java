@@ -6,7 +6,7 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.*;
 
-public class Human implements Serializable {
+public class Human implements Serializable, Individual {
     private String name;
     private Gender gender;
     private LocalDate dateBirth;
@@ -21,7 +21,7 @@ public class Human implements Serializable {
         children = new ArrayList<>();
     }
 
-    public void addChild(Human child, FamilyTree familyTree) {
+    public void addChild(Human child, FamilyTree<Human> familyTree) {
         children.add(child);
         if (this.getGenderInfo().equals("Female")) {
             child.setMother(this);
@@ -31,10 +31,12 @@ public class Human implements Serializable {
         familyTree.addPerson(child);
     }
 
+    @Override
     public String getName() {
         return name;
     }
 
+    @Override
     public LocalDate getDateBirth() {
         return dateBirth;
     }
