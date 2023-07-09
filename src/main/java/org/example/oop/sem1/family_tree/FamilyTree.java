@@ -49,6 +49,5 @@ public class FamilyTree<T extends Individual> implements Iterable<T> {
     @Override
     public Iterator<T> iterator() {
         return new TreeIterator<>(humanList);
-    }
-
+        }
 }
