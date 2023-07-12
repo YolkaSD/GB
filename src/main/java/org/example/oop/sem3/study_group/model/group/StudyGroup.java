@@ -1,9 +1,8 @@
-package org.example.oop.sem3.study_group.group;
+package org.example.oop.sem3.study_group.model.group;
 
-import org.example.oop.sem3.study_group.student.Student;
-import org.example.oop.sem3.study_group.student.StudentIterator;
-import org.example.oop.sem3.study_group.student.comparators.StudentComparatorByAge;
-import org.example.oop.sem3.study_group.student.comparators.StudentComparatorByName;
+import org.example.oop.sem3.study_group.model.student.StudentIterator;
+import org.example.oop.sem3.study_group.model.student.comparators.StudentComparatorByAge;
+import org.example.oop.sem3.study_group.model.student.comparators.StudentComparatorByName;
 
 import java.util.*;
 

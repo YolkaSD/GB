@@ -4,7 +4,8 @@ import org.example.oop.sem1.family_tree.FamilyTree;
 
 import java.io.Serializable;
 import java.time.LocalDate;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Human implements Serializable, Individual {
     private String name;
@@ -77,7 +78,7 @@ public class Human implements Serializable, Individual {
     public String toString() {
         return
                 "Имя: '" + name + '\'' +
-                ", Пол: " + gender.name() +
-                ", Дата рождения: " + dateBirth;
+                        ", Пол: " + gender.name() +
+                        ", Дата рождения: " + dateBirth;
     }
 }

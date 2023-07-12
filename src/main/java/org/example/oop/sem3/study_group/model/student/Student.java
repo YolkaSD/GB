@@ -1,6 +1,6 @@
-package org.example.oop.sem3.study_group.student;
+package org.example.oop.sem3.study_group.model.student;
 
-import org.example.oop.sem3.study_group.group.GroupItem;
+import org.example.oop.sem3.study_group.model.group.GroupItem;
 
 public class Student implements Comparable<Student>, GroupItem {
     private int id;

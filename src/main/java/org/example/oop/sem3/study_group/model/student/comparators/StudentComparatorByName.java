@@ -1,7 +1,6 @@
-package org.example.oop.sem3.study_group.student.comparators;
+package org.example.oop.sem3.study_group.model.student.comparators;
 
-import org.example.oop.sem3.study_group.group.GroupItem;
-import org.example.oop.sem3.study_group.student.Student;
+import org.example.oop.sem3.study_group.model.group.GroupItem;
 
 import java.util.Comparator;
 

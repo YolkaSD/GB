@@ -1,7 +1,7 @@
-package org.example.oop.sem3.study_group.service;
+package org.example.oop.sem3.study_group.model.service;
 
-import org.example.oop.sem3.study_group.group.StudyGroup;
-import org.example.oop.sem3.study_group.student.Student;
+import org.example.oop.sem3.study_group.model.group.StudyGroup;
+import org.example.oop.sem3.study_group.model.student.Student;
 
 public class Service {
     private int idStudent;

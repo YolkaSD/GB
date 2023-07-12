@@ -1,4 +1,4 @@
-package org.example.oop.sem3.study_group.student;
+package org.example.oop.sem3.study_group.model.student;
 
 import java.util.Iterator;
 import java.util.List;
